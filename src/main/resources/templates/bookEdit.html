@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.com">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Book Register</title>
+    <style>
+        .bg-prussian-blue {
+            background-color: #003153 !important;
+        }
+        body {
+            background-color: #f8f9fa;
+        }
+        .box-container {
+            max-width: 450px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            border: 2px solid black;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .form-control {
+            border-radius: 8px;
+        }
+        .btn-custom {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        .form-heading {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #4951c7;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-prussian-blue">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Book Store</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="available_books">Available Books</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="my_books">My Books</a>
+                </li>
+            </ul>
+            <div>
+                <a class="nav-link text-white" href="book_register">New Book Register</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container py-5">
+    <div class="box-container">
+        <h3 class="form-heading">Edit Book</h3>
+        <form th:action="@{/save}" method="post" th:object="${book}">
+            <input type="hidden" name="id" th:value="${book.id}">
+            <div class="mb-3">
+                <label for="name" class="form-label fw-bold">Book Name</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter book name" th:value="${book.name}">
+            </div>
+            <div class="mb-3">
+                <label for="author" class="form-label fw-bold">Author</label>
+                <input type="text" class="form-control" name="author" placeholder="Enter author name" th:value="${book.author}>
+            </div>
+            <div class="mb-3">
+                <label for="price" class="form-label fw-bold">Price</label>
+                <input type="text" class="form-control" name="price" placeholder="Enter price" th:value="${book.price}>
+            </div>
+            <button type="submit" class="btn btn-primary btn-custom">Edit</button>
+        </form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+</body>
+</html>
