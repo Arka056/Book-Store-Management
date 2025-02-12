@@ -55,6 +55,7 @@
 ![My_Book Photo](https://github.com/Arka056/Book-Store-Management/blob/master/My_Book.png?raw=true)
 
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 ### Built With
 
 This section should list any major frameworks/libraries that bootstrap your project. Leave any add-ons/plugins for the acknowledgments section. Here are a few examples.
@@ -101,7 +102,7 @@ cd online-book-store
 http://localhost:1101
 
 ```
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- CONTRIBUTING -->
 ## Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
@@ -112,6 +113,10 @@ Don't forget to give the project a star! Thanks again!
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- CONTACT -->
 ## Contact
 
