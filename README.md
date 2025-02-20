@@ -75,10 +75,12 @@ This section should list any major frameworks/libraries that bootstrap your proj
 To get a local copy up and running follow these simple steps:
 
 ### Prerequisites
+
 * **Java Development Kit (JDK):** Ensure you have Java 17 or later installed. You can download it from the official [Oracle website](https://www.oracle.com/in/java/technologies/downloads/)
 * **Maven:** The project uses Maven for build automation. If you don't have Maven installed, the project includes the Maven Wrapper (`mvnw`), so you can use `./mvnw` instead of `mvn`. 
 
 **Note:** If you encounter any issues during these steps, please refer to the [Spring Boot Getting Started Guide](https://docs.spring.io/spring-boot/index.html) for more detailed instructions.
+
 ### Installation
 
 1. Clone the repo:
@@ -103,8 +105,10 @@ http://localhost:1101
 
 ```
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 <!-- CONTRIBUTING -->
-## Contributing
+### Contributing
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 Don't forget to give the project a star! Thanks again!
 
