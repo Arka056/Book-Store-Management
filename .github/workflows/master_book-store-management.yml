@@ -48,7 +48,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: java-app
-          path: target/
+          path: .
       
       - name: Login to Azure
         uses: azure/login@v2
@@ -63,5 +63,5 @@ jobs:
         with:
           app-name: 'book-store-management'
           slot-name: 'Production'
-          package: 'target/*.jar'
+          package: '*.jar'
 
