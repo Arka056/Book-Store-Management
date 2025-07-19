@@ -48,7 +48,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: java-app
-          path: .
+          path: home/site/wwwroot
       
       - name: Login to Azure
         uses: azure/login@v2
