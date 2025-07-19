@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'book-store-management'
           slot-name: 'Production'
-          package: '*.jar'
+          package: 'target/*.jar'
 
